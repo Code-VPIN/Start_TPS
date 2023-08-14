@@ -1,0 +1,496 @@
+
+:root {
+    --primary: #13C5DD;
+    --secondary: #354F8E;
+    --light: #2c0404;
+    --dark: #1D2A4D;
+}
+
+.btn {
+    font-weight: 700;
+    transition: .5s;
+}
+
+.btn:hover {
+    -webkit-box-shadow: 0 8px 6px -6px #555555;
+    -moz-box-shadow: 0 8px 6px -6px #555555;
+    box-shadow: 0 8px 6px -6px #555555;
+}
+
+.mainbtn {
+    font-weight: 700;
+    transition: .5s;
+    border-radius: 4px;
+    background: #13C5DD;
+    border: none;
+}
+
+.appointment {
+    background-color: #7e76f0;
+    max-width: 1280px;
+    border-radius: 5px;
+}
+
+
+
+.btn-primary {
+    color: #FFFFFF;
+}
+.btn-primary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+    z-index: 99;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Jost', sans-serif;
+    position: relative;
+    margin-left: 30px;
+    padding: 30px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark);
+    outline: none;
+    transition: .5s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+@media (min-width: 992px) {
+    .navbar-light .navbar-nav .nav-link::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 5px;
+        bottom: 0;
+        left: 50%;
+        background: var(--primary);
+        transition: .5s;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover::before,
+    .navbar-light .navbar-nav .nav-link.active::before {
+        width: 100%;
+        left: 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link  {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+}
+
+.hero-header {
+    background: url(../img/hero.jpg) top right no-repeat fixed;
+    background-size: cover;
+}
+
+.service-item {
+    position: relative;
+    height: 420px;
+    padding: 0 30px;
+    transition: .5s;
+}
+
+.service-item .service-icon {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    border-radius: 50%;
+    transform: rotate(-14deg);
+}
+
+.service-item .service-icon i {
+    transform: rotate(15deg);
+}
+
+.service-item a.btn {
+    position: absolute;
+    width: 60px;
+    bottom: -48px;
+    left: 50%;
+    margin-left: -30px;
+    opacity: 0;
+}
+
+.service-item:hover a.btn {
+    bottom: -24px;
+    opacity: 1;
+}
+
+
+/* carausel testomonial */
+#headtest {
+	color: #000000;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	position: relative;
+	margin: 30px 0 60px;
+}
+#headtest::after {
+	content: "";
+	width: 140px;
+	position: absolute;
+	margin: 0 auto;
+	height: 3px;
+	background: #db584e;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+    opacity: .8;
+}
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	margin: 5px auto;
+	padding: 0 70px;
+}
+.carousel-item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 290px;
+}
+.carousel .item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #db584e;
+}
+.carousel .carousel-control {
+	width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+	background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #da9191;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+
+/* tas features css */
+.service-26 {      
+    color: #000000;
+    font-weight: 300;
+    background: url(../img/tasbgp.png) top right no-repeat fixed;
+    background-size: cover;
+  }
+  
+  .service-26 h1, .service-26 h2, .service-26 h3, .service-26 h4, .service-26 h5, .service-26 h6 {
+    color: #000000;
+  }
+  
+  .service-26 .font-weight-medium {
+      font-weight: 500;
+  }
+  
+  .service-26  .badge {
+      line-height: 22px;
+  }
+  
+  .service-26 .badge-info {
+      background: #188ef4;
+  }
+  
+  .service-26 .wrap-service-26 .max-box {
+    max-width: 580px;
+  }
+  
+  .service-26 a {
+      text-decoration: none;
+  }
+  
+  .service-26 .linking {
+      color: #000000;
+  }
+  
+  .service-26 .linking:hover {
+      color: #316ce8;
+  }
+
+
+  /* about us css */
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+
+  .techbtn {
+    background-color: #13C5DD;
+    color: white;
+  }
+
+  .jumbotron {
+    max-width: 1300px;
+    margin: auto;
+    background-color: #000000;
+    color: white;
+  }
+
+
+  .section_second_tps{
+    background-image: linear-gradient(90deg,#00daff 0%,#b2f4ff 100%);
+  }
+  .btn-color-tps{
+    background: #188ef4;
+    color: #ffff;
+    padding: 2% 9%;
+    font-size: 18px;
+  }
+  .map_price_monitoring{
+    font-size: 51px;
+    color: #1b0c75;
+  }
+  .minimum_tps_paragraph{
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 35px;
+    color: #1b0c75;
+  }
+  /* second_section style  */
+  .the_third_key_para{
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 35px;
+    color: #1b0c75;
+    margin: 0px 220px;
+  }
+  .gain_maxi_opti_arrow p{
+    font-size: 20px;
+    margin-left:15px;
+font-weight: bold;
+    color: #1b0c75;
+}
+.brand_opti_tps_head{
+    font-size: 51px;
+    color: #1b0c75;
+    margin: 0px 355px;
+}
+.gain-inline-md-flexing{
+    display: inline-flex;
+}
+  
+.optimization_section_tps{
+    background-image: linear-gradient(0deg,#ebe7ff 0%,#e1e9ff 100%);
+}
+
+/* third section style  */
+.software_third_tab_section{
+    font-size: 51px;
+    color: #1b0c75;
+}
+i.bi.bi-eye {
+    font-size: 55px;
+    color: #00daff;
+}
+
+h2{
+color: #1b0c75;
+}
+.tps_vpn_card_tab p{
+color: #1b0c75;
+font-size: 20px;
+}
+
+.tab_arrow_tps-vpn i{
+    font-size: 55px;
+}
+
+.tab_button_tps_vpn:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+.clr_btn_badge_info{
+    background-color: #188ef4;
+    color: #000000;
+    text-decoration: none;
+    padding: 0.5% 3%;
+    font-size: 24px;
+    color: #ffff;
+}
+
+.id_link_Seller_Discovery a{
+    margin-left: 20px;
+}
+
+/* end */
+
+.tps-fl-row-content-vpn {
+    background-image: linear-gradient(360deg,#ebe7ff 0%,#e1e9ff 100%);
+}
+
+.tps_vpn_connect_link{
+    font-size: 21px;
+    color: blue;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+/* media query  */
+@media (min-width:600px) and (max-width:1025px) {
+    .map_price_monitoring {
+        font-size: 29px;
+    }
+    .minimum_tps_paragraph {
+        font-size: 20px;
+    }
+
+    .brand_opti_tps_head {
+        font-size: 29px;
+        margin: 0px;
+    }
+    .the_third_key_para {
+        font-size: 20px;
+        margin: 0px;
+    }
+    .tab_arrow_tps-vpn i{
+        display: none;
+    }
+    .id_link_Seller_Discovery a {
+        display: inline-grid;
+        grid-template-columns: auto auto auto auto;
+        font-size: 17px;
+        margin-bottom: 11px;
+        padding: 1% 4%;
+    }
+}
+@media (min-width:320px) and (max-width:599.99px) {
+    .map_price_monitoring {
+        font-size: 29px;
+    }
+    .minimum_tps_paragraph {
+        font-size: 20px;
+    }
+
+    .brand_opti_tps_head {
+        font-size: 29px;
+        margin: 0px;
+    }
+    .the_third_key_para {
+        font-size: 20px;
+        margin: 0px;
+    }
+    .gain-inline-md-flexing{
+        display: inline-block;
+    }
+    .tab_arrow_tps-vpn i{
+        display: none;
+    }
+    .software_third_tab_section {
+        font-size: 29px;
+    }
+    .tps_vpn_card_tab p {
+        color: #1b0c75;
+        font-size: 10px;
+        padding: 0px !important;
+        margin: 0;
+    }
+    .tps_vpn_card_tab h2 {
+        color: #1b0c75;
+        font-size: 18px;
+    }
+    i.bi.bi-eye {
+        font-size: 35px;
+        color: #00daff;
+    }
+    .id_link_Seller_Discovery a {
+        display: inline-grid;
+        grid-template-columns: auto auto auto auto;
+        font-size: 17px;
+        margin-bottom: 11px;
+        padding: 1% 4%;
+    }
+}
