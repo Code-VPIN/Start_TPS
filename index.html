@@ -73,7 +73,8 @@
                         <a href="about.html" class="nav-item nav-link">About us</a>
                         <a href="contact.html" class="nav-item nav-link">Contact us</a>
                     </div>
-                    <button class="mainbtn m-3" type="click"><a href="#book_demo">Book A Demo</a></button>
+                    <button class="mainbtn m-3" type="click" data-bs-toggle="modal" data-bs-target="#book_demo_model">Book
+                        A Demo</button>
                 </div>
             </nav>
         </div>
@@ -89,13 +90,74 @@
                     <h2 class="d-inline-block text-primary text-uppercase border-bottom border-5"
                         style="border-color: rgba(256, 256, 256, .3) !important;">IT Services Agency</h2>
                     <p class="display-4 text-white mb-md-4">Awesome IT Services for your Business </p>
-                    <p class="display-6 text-white mb-md-4">kind of text definition Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente laborum veniam adipisci ab aliquid corrupti magni fugit veritatis eius alias repellat ex commodi nisi laboriosam quae, vel quas aperiam tempora. </p>
+                    <p class="display-6 text-white mb-md-4">kind of text definition Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Sapiente laborum veniam adipisci ab aliquid corrupti magni fugit
+                        veritatis eius alias repellat ex commodi nisi laboriosam quae, vel quas aperiam tempora. </p>
 
                 </div>
             </div>
         </div>
     </div>
     <!-- Hero End -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="book_demo_model" tabindex="-1" aria-labelledby="book_a_demo" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="book_a_demo">Book A Demo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <select class="form-select bg-light border-0" style="height: 55px;">
+                                    <option selected>Choose Service</option>
+                                    <option value="1">Analytics</option>
+                                    <option value="2">Digital Marketing</option>
+                                    <option value="3">Custom Integration</option>
+                                    <option value="2">TAS</option>
+                                    <option value="3">ReCube</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control bg-light border-0" placeholder="Your Name"
+                                    style="height: 55px;" required>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control bg-light border-0"
+                                    placeholder="Organization Name" style="height: 55px;" required>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="email" class="form-control bg-light border-0" placeholder="Email"
+                                    style="height: 55px;" required>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="tel" class="form-control bg-light border-0" placeholder="9999999999"
+                                    style="height: 55px;" required>
+                            </div>
+                            <div class="col-12 ">
+                                <div class="date" id="date" data-target-input="nearest">
+                                    <input type="datetime-local"
+                                        class="form-control bg-light border-0 datetimepicker-input"
+                                        placeholder="Date" data-target="#date" data-toggle="datetimepicker"
+                                        style="height: 55px;" required>
+                                </div>
+                            </div>
+                            <!-- <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+                            </div> -->
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- about start -->
     <div class="container-fluid py-5">
@@ -130,23 +192,28 @@
             <h5 class="d-inline-block text-uppercase border-bottom border-5 display-4">Tech Solutions</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis esse quidem blanditiis quas</p>
         </div>
-        
+
         <div class="container">
             <div class="row wrap-service-26 mb-5">
                 <div class="col-md-7 align-self-center">
                     <div class="max-box">
                         <!-- <span class="badge badge-info rounded-pill px-3 py-1 font-weight-medium">TAS</span> -->
                         <h3 class="">About TAS</h3>
-                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur consectetur officiis temporibus mollitia, eaque sequi harum molestias. Obcaecati totam accusantium soluta, doloribus fugiat perferendis sit asperiores praesentium aliquid id. </p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos consequatur necessitatibus consequuntur tempora eaque hic inventore? Sapiente, labore tenetur illo ratione est ex error aliquid voluptate, optio nobis non repellat.</p>
-                        <button class="techbtn rounded" type="click"><a href="tas.html" class="btn-primary">Learn More</a></button>
+                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur
+                            consectetur officiis temporibus mollitia, eaque sequi harum molestias. Obcaecati totam
+                            accusantium soluta, doloribus fugiat perferendis sit asperiores praesentium aliquid id. </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos consequatur necessitatibus
+                            consequuntur tempora eaque hic inventore? Sapiente, labore tenetur illo ratione est ex error
+                            aliquid voluptate, optio nobis non repellat.</p>
+                        <button class="techbtn rounded" type="click"><a href="tas.html" class="btn-primary">Learn
+                                More</a></button>
                     </div>
                 </div>
                 <div class="col-md-5 col-md-5">
                     <img src="img/blog-1.jpg" class="img-fluid rounded" />
                 </div>
             </div>
-            
+
             <div class="row wrap-service-26 mt-4 pt-3">
                 <div class="col-md-6">
                     <img src="img/blog-3.jpg" class="img-fluid rounded" />
@@ -154,9 +221,14 @@
                 <div class="col-md-6">
                     <!-- <span class="badge badge-info rounded-pill px-3 py-1 font-weight-light">ReCube</span> -->
                     <h3 class="mt-3">About ReCube</h3>
-                    <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur consectetur officiis temporibus mollitia, eaque sequi harum molestias. Obcaecati totam accusantium soluta, doloribus fugiat perferendis sit asperiores praesentium aliquid id. </p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos consequatur necessitatibus consequuntur tempora eaque hic inventore? Sapiente, labore tenetur illo ratione est ex error aliquid voluptate, optio nobis non repellat.</p>
-                        <button class="techbtn rounded" type="click"><a href="recube.html" class="btn-primary">Learn More</a></button>
+                    <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur consectetur
+                        officiis temporibus mollitia, eaque sequi harum molestias. Obcaecati totam accusantium soluta,
+                        doloribus fugiat perferendis sit asperiores praesentium aliquid id. </p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos consequatur necessitatibus
+                        consequuntur tempora eaque hic inventore? Sapiente, labore tenetur illo ratione est ex error
+                        aliquid voluptate, optio nobis non repellat.</p>
+                    <button class="techbtn rounded" type="click"><a href="recube.html" class="btn-primary">Learn
+                            More</a></button>
                 </div>
             </div>
         </div>
@@ -287,7 +359,7 @@
     <!-- Book A Demo End -->
 
     <!-- Testimonial Start -->
-    
+
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-center m-auto p-3">
@@ -313,7 +385,8 @@
                         </div>
                         <div class="item carousel-item">
                             <div class="img-box"><img src="./img/user.jpg" alt=""></div>
-                            <p class="testimonial text-dark">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id
+                            <p class="testimonial text-dark">Phasellus vitae suscipit justo. Mauris pharetra feugiat
+                                ante id
                                 lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan
                                 tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa.
                                 Etiam hendrerit dolor eget rutrum.</p>
@@ -416,7 +489,8 @@
                     <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">
                         Get In Touch</h4>
                     <p class="mb-4">D1, off, Ashok Marg, Lawrence Terrace, Hazratganj, Lucknow, Uttar Pradesh 226001</p>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i><a href="https://goo.gl/maps/QQQK3g6VRvsTURGB7" target="_blank">Visit Now</a></p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i><a
+                            href="https://goo.gl/maps/QQQK3g6VRvsTURGB7" target="_blank">Visit Now</a></p>
                     <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>support@tpstech.in</p>
                     <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>08047188277 </p>
                 </div>
@@ -453,13 +527,16 @@
                     </form>
                     <h6 class="text-primary text-uppercase mt-4 mb-3">Follow Us</h6>
                     <div class="d-flex">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://twitter.com/tpstechin" target="_blank"><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.facebook.com/tpstechin/" target="_blank"><i
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                            href="https://twitter.com/tpstechin" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                            href="https://www.facebook.com/tpstechin/" target="_blank"><i
                                 class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.linkedin.com/company/tpstechin/?originalSubdomain=in" target="_blank"><i
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                            href="https://www.linkedin.com/company/tpstechin/?originalSubdomain=in" target="_blank"><i
                                 class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="https://www.instagram.com/tpstechin/" target="_blank"><i
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle"
+                            href="https://www.instagram.com/tpstechin/" target="_blank"><i
                                 class="fab fa-instagram"></i></a>
                     </div>
                 </div>
