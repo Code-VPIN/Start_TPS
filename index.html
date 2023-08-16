@@ -73,7 +73,7 @@
                         <a href="about.html" class="nav-item nav-link">About us</a>
                         <a href="contact.html" class="nav-item nav-link">Contact us</a>
                     </div>
-                    <button class="mainbtn m-3" type="click" data-bs-toggle="modal" data-bs-target="#book_demo_model">Book
+                    <button class="mainbtn rounded-pill m-3 p-3" type="click" data-bs-toggle="modal" data-bs-target="#book_demo_model">Book
                         A Demo</button>
                 </div>
             </nav>
@@ -90,42 +90,46 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form action="" class="contact__form" id="contact-form">
                         <div class="row g-3">
                             <div class="col-12">
-                                <select class="form-select bg-light border-0" style="height: 55px;">
-                                    <option selected>Choose Service</option>
-                                    <option value="1">Analytics</option>
-                                    <option value="2">Digital Marketing</option>
-                                    <option value="3">Custom Integration</option>
-                                    <option value="2">TAS</option>
-                                    <option value="3">ReCube</option>
+                                <select name="user_choice" class="form-select bg-light border-0" style="height: 55px;">
+                                    <option  selected>Choose Service</option>
+                                    <option value="Analytics">Analytics</option>
+                                    <option value="Digital Marketing">Digital Marketing</option>
+                                    <option value="Custom Integration">Custom Integration</option>
+                                    <option value="TAS">TAS</option>
+                                    <option value="ReCube">ReCube</option>
                                 </select>
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control bg-light border-0" placeholder="Your Name"
+                                <input type="text" name="user_name" class="form-control bg-light border-0" placeholder="Your Name"
                                     style="height: 55px;" required>
                             </div>
                             <div class="col-12 col-sm-6">
                                 <input type="text" class="form-control bg-light border-0"
-                                    placeholder="Organization Name" style="height: 55px;" required>
+                                    placeholder="Organization Name" name="org_name" style="height: 55px;" required>
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="email" class="form-control bg-light border-0" placeholder="Email"
+                                <input type="email" name="user_email" class="form-control bg-light border-0" placeholder="Email"
                                     style="height: 55px;" required>
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="tel" class="form-control bg-light border-0" placeholder="9999999999"
+                                <input type="tel" class="form-control bg-light border-0" name="user_mobile" placeholder="Enter Mobile No."
                                     style="height: 55px;" required>
                             </div>
                             <div class="col-12 ">
                                 <div class="date" id="date" data-target-input="nearest">
-                                    <input type="datetime-local"
+                                    <input type="datetime-local" name="demo_date"
                                         class="form-control bg-light border-0 datetimepicker-input"
                                         placeholder="Date" data-target="#date" data-toggle="datetimepicker"
                                         style="height: 55px;" required>
                                 </div>
                             </div>
+                            <div class="col-12 ">
+                                <textarea name="user_message" rows="4" id="message" class="form-control bg-light border-0" required placeholder="Message"></textarea>
+                             </div>
+                            <p class="text-success" id="contact-message"></p>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                 <button type="submit" class="btn btn-primary">Submit</button>
@@ -142,13 +146,12 @@
     <!-- Hero Start -->
     <div class="container-fluid mb-2 hero-header">
         <div class="container py-4">
-            <div class="row justify-content-start">
-                <div class="col-lg-8 text-center text-lg-start">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
                     <h2 class="d-inline-block text-primary text-uppercase border-bottom border-5"
                         style="border-color: rgba(256, 256, 256, .3) !important;">IT Services Agency</h2>
-                    <p class="display-4 text-white mb-md-4">Awesome IT Services for your Business</p>
-                    <p class="display-6 text-white mb-md-4">Get Your All Business Solution at one Place. Solution we provide to grow your business  </p>
-
+                    <p class="display-4 text-white mb-md-4">E-commerce & SMBs Solution Provider </p>
+                    <p class="display-6 text-white mb-md-4">Products & Services that help grow your business</p>
                 </div>
             </div>
         </div>
@@ -156,7 +159,7 @@
     <!-- Hero End -->
 
     <!-- about start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5 bg-light">
         <div class="container">
             <div class="row gx-5">
                 <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 360px;">
@@ -168,13 +171,10 @@
                 <div class="col-lg-7">
                     <div class="mb-4">
                         <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">About Us</h5>
-                        <h1 class="display-4">Bringing new IT Business Solutions And Ideas</h1>
+                        <h1 class="">Bringing New E-Commerce Solutions</h1>
                     </div>
-                    <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor
-                        voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum
-                        et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur
-                        takimata eirmod, dolores takimata consetetur invidunt magna dolores aliquyam dolores dolore.
-                        Amet erat amet et magna</p>
+                    <p class="">An Indian at heart, TPS Technologies is an experienced and leading e-commerce company. We are pioneered in fulfilling more than a million products till date. Our experience spans across multiple marketplaces, own eCommerce website, Digital marketing, High quality content services – all aimed to deliver a high-quality online shopping experience. With a decade of experience, we launched key eCommerce apps that help in better order management, returns management as well as business analytics service. <a href="tas.html" class="text-decoration-none"> Learn
+                        More</a></p></p>
                 </div>
             </div>
         </div>
@@ -193,16 +193,14 @@
             <div class="row wrap-service-26 mb-5">
                 <div class="col-md-7 align-self-center">
                     <div class="max-box">
-                        <!-- <span class="badge badge-info rounded-pill px-3 py-1 font-weight-medium">TAS</span> -->
+                        <span class="badge badge-info bg-primary rounded-pill px-3 py-1 font-weight-medium">TAS</span>
                         <h3 class="">About TAS</h3>
-                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur
-                            consectetur officiis temporibus mollitia, eaque sequi harum molestias. Obcaecati totam
-                            accusantium soluta, doloribus fugiat perferendis sit asperiores praesentium aliquid id. </p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos consequatur necessitatibus
-                            consequuntur tempora eaque hic inventore? Sapiente, labore tenetur illo ratione est ex error
-                            aliquid voluptate, optio nobis non repellat.</p>
-                        <button class="techbtn rounded" type="click"><a href="tas.html" class="btn-primary">Learn
-                                More</a></button>
+                        <p class="mt-3">The Attendance Management System Application is a user-friendly and efficient tool designed to simplify 
+                            attendance tracking for organizations. It offers real-time monitoring of employee attendance with enhanced mobility. 
+                            The application streamlines leave management by facilitating easy leave requests and approvals.</p>
+                        <p>It also supports various shift patterns, making it convenient to manage different work schedules. With its automated features, 
+                            the system ensures accurate attendance records, reducing errors and saving valuable time for HR personnel.
+                            <a href="tas.html" class="text-decoration-none"> Learn More</a></p>
                     </div>
                 </div>
                 <div class="col-md-5 col-md-5">
@@ -215,16 +213,15 @@
                     <img src="img/blog-3.jpg" class="img-fluid rounded" />
                 </div>
                 <div class="col-md-6">
-                    <!-- <span class="badge badge-info rounded-pill px-3 py-1 font-weight-light">ReCube</span> -->
+                    <span class="badge badge-info bg-primary rounded-pill px-3 py-1 font-weight-light">ReCube</span>
                     <h3 class="mt-3">About ReCube</h3>
-                    <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur consectetur
-                        officiis temporibus mollitia, eaque sequi harum molestias. Obcaecati totam accusantium soluta,
-                        doloribus fugiat perferendis sit asperiores praesentium aliquid id. </p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos consequatur necessitatibus
-                        consequuntur tempora eaque hic inventore? Sapiente, labore tenetur illo ratione est ex error
-                        aliquid voluptate, optio nobis non repellat.</p>
-                    <button class="techbtn rounded" type="click"><a href="recube.html" class="btn-primary">Learn
-                            More</a></button>
+                    <p class="mt-3">E-commerce return rates are typically significantly higher than brick-and-mortar stores. 
+                        In a study by Shippo (and compiled by Richpanel), the data shows that the average e-commerce return rate sits 
+                        somewhere between 20-30%. E-commerce returns can be costly for retailers due to factors such as shipping expenses, 
+                        restocking fees, and potential loss in value for returned items. </p>
+                    <p>ReCube is a return management software developed by TPS technologies to manage returns from multiple marketplaces and helps seller to manage,
+                        analyse, and file claims with marketplace or courier aggregator. <a href="recube.html" class="text-decoration-none"> Learn
+                            More</a></p>
                 </div>
             </div>
         </div>
@@ -250,7 +247,7 @@
                         <h4 class="mb-3">Analytics</h4>
                         <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo
                             elitr dolor amet sit</p>
-                        <a class="btn btn-lg btn-primary rounded-pill" href="">
+                        <a class="btn btn-lg btn-primary rounded-pill" href="service.html">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
@@ -306,42 +303,46 @@
                 <div class="col-lg-6" id="book_demo">
                     <div class="bg-white text-center rounded p-5">
                         <h1 class="mb-4">Book A Demo</h1>
-                        <form>
+                        <form action="" class="contact__form" id="contact-form">
                             <div class="row g-3">
                                 <div class="col-12">
-                                    <select class="form-select bg-light border-0" style="height: 55px;">
-                                        <option selected>Choose Service</option>
-                                        <option value="1">Analytics</option>
-                                        <option value="2">Digital Marketing</option>
-                                        <option value="3">Custom Integration</option>
-                                        <option value="2">TAS</option>
-                                        <option value="3">ReCube</option>
+                                    <select name="user_choice" class="form-select bg-light border-0" style="height: 55px;">
+                                        <option  selected>Choose Service</option>
+                                        <option value="Analytics">Analytics</option>
+                                        <option value="Digital Marketing">Digital Marketing</option>
+                                        <option value="Custom Integration">Custom Integration</option>
+                                        <option value="TAS">TAS</option>
+                                        <option value="ReCube">ReCube</option>
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name"
+                                    <input type="text" name="user_name" class="form-control bg-light border-0" placeholder="Your Name"
                                         style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <input type="text" class="form-control bg-light border-0"
-                                        placeholder="Organization Name" style="height: 55px;" required>
+                                        placeholder="Organization Name" name="org_name" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Email"
+                                    <input type="email" name="user_email" class="form-control bg-light border-0" placeholder="Email"
                                         style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="tel" class="form-control bg-light border-0" placeholder="Enter Mobile No."
+                                    <input type="tel" class="form-control bg-light border-0" name="user_mobile" placeholder="Enter Mobile No."
                                         style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 ">
                                     <div class="date" id="date" data-target-input="nearest">
-                                        <input type="datetime-local"
+                                        <input type="datetime-local" name="demo_date"
                                             class="form-control bg-light border-0 datetimepicker-input"
                                             placeholder="Date" data-target="#date" data-toggle="datetimepicker"
                                             style="height: 55px;" required>
                                     </div>
                                 </div>
+                                <div class="col-12 ">
+                                    <textarea name="user_message" rows="4" id="message" class="form-control bg-light border-0" required placeholder="Message"></textarea>
+                                 </div>
+                                <p class="text-success" id="contact-message"></p>
                                 <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
                                 </div>
@@ -355,7 +356,6 @@
     <!-- Book A Demo End -->
 
     <!-- Testimonial Start -->
-
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-center m-auto p-3">
@@ -478,7 +478,7 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light mt-2 py-2">
+    <div class="container-fluid footer_change border-top text-light mt-2 py-2">
         <div class="container py-2">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
@@ -493,23 +493,23 @@
                 <div class="col-lg-3 col-md-6">
                     <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">
                         Quick Links</h4>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2 text-decoration-none" href="index.html"><i class="fa fa-angle-right me-2"></i>Home</a>
-                        <a class="text-light mb-2 text-decoration-none" href="about.html"><i class="fa fa-angle-right me-2"></i>About Us</a>
-                        <a class="text-light mb-2 text-decoration-none" href="service.html"><i class="fa fa-angle-right me-2"></i>Our Services</a>
+                    <div class="d-flex flex-column justify-content-start footer_change1">
+                        <a class="mb-2 text-decoration-none" href="index.html"><i class="fa fa-angle-right me-2"></i>Home</a>
+                        <a class="mb-2 text-decoration-none" href="about.html"><i class="fa fa-angle-right me-2"></i>About Us</a>
+                        <a class="mb-2 text-decoration-none" href="service.html"><i class="fa fa-angle-right me-2"></i>Our Services</a>
                         <!-- <a class="text-light mb-2 text-decoration-none" href="#"><i class="fa fa-angle-right me-2"></i>Latest Blog</a> -->
-                        <a class="text-light text-decoration-none" href="contact.html"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
+                        <a class="text-decoration-none" href="contact.html"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">
                         Popular Links</h4>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2 text-decoration-none" href="tas.html"><i class="fa fa-angle-right me-2"></i>TAS</a>
-                        <a class="text-light mb-2 text-decoration-none" href="recube.html"><i class="fa fa-angle-right me-2"></i>ReCube</a>
-                        <a class="text-light mb-2 text-decoration-none" href="service.html"><i class="fa fa-angle-right me-2"></i>Analytics</a>
-                        <a class="text-light mb-2 text-decoration-none" href="service.html"><i class="fa fa-angle-right me-2"></i>Digital Marketing</a>
-                        <a class="text-light mb-2 text-decoration-none" href="#"><i class="fa fa-angle-right me-2"></i>Privacy Policy</a>
+                    <div class="d-flex flex-column justify-content-start footer_change1">
+                        <a class="mb-2 text-decoration-none" href="tas.html"><i class="fa fa-angle-right me-2"></i>TAS</a>
+                        <a class="mb-2 text-decoration-none" href="recube.html"><i class="fa fa-angle-right me-2"></i>ReCube</a>
+                        <a class="mb-2 text-decoration-none" href="service.html"><i class="fa fa-angle-right me-2"></i>Analytics</a>
+                        <a class="mb-2 text-decoration-none" href="service.html"><i class="fa fa-angle-right me-2"></i>Digital Marketing</a>
+                        <a class="mb-2 text-decoration-none" href="#"><i class="fa fa-angle-right me-2"></i>Privacy Policy</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -539,7 +539,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-dark text-light border-top border-secondary py-2">
+    <div class="container-fluid footer_change text-light border-top border-secondary py-2">
         <div class="container">
             <div class="row g-5">
                 <div class="col-md-12 text-center">
@@ -552,6 +552,8 @@
     <!-- Footer End -->
 
     <!-- JavaScript Libraries -->
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
