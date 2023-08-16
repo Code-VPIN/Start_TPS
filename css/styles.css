@@ -285,10 +285,10 @@
   .service-26 .wrap-service-26 .max-box {
     max-width: 580px;
   }
-  
-  /* .service-26 a {
+
+  .service-26 a {
       text-decoration: none;
-  } */
+  }
   
   .service-26 .linking {
       color: #000000;
@@ -296,15 +296,6 @@
   
   .service-26 .linking:hover {
       color: #316ce8;
-  }
-
-
-  /* about us css */
-  .about-section {
-    padding: 50px;
-    text-align: center;
-    background-color: #474e5d;
-    color: white;
   }
 
   .techbtn {
@@ -518,3 +509,21 @@ font-size: 20px;
 .footer_change1 a:hover {
     color: blue;
 }
+
+
+/* about us page css */
+
+ /* about us css */
+ .about-section {
+    padding: 50px;
+    text-align: center;
+    background: url("../img/About-us-main.jpg") no-repeat top right;
+    color: rgb(0, 0, 0);
+    background-size: cover;
+    width: auto;
+    height: auto;
+  }
+
+  /* .service-27 {
+    background-color: var(--primary);
+  } */
