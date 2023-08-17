@@ -42,3 +42,8 @@ const sendEmail = (e) => {
 }
 
 contactForm.addEventListener('submit', sendEmail)
+
+
+
+// sidebar tas recube js
+
