@@ -121,7 +121,7 @@ body {
 }
 
 .hero-header {
-    background: url(../img/recubebg.jpg) top right no-repeat;
+    background: url(../img/start_tps_bg.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -342,7 +342,7 @@ body {
     font-size: 18px;
 }
 
-.map_price_monitoring {
+.prod_price_monitoring {
     font-size: 51px;
     color: #1b0c75;
 }
@@ -372,9 +372,10 @@ body {
 }
 
 .brand_opti_tps_head {
-    font-size: 51px;
+    font-size: 52px;
     color: #1b0c75;
     margin: 0px 355px;
+    /* font-weight: 700; */
 }
 
 .gain-inline-md-flexing {
@@ -418,7 +419,7 @@ h2 {
     background-color: #188ef4;
     color: #000000;
     text-decoration: none;
-    padding: 0.5% 3%;
+    padding: 0.5% 2%;
     font-size: 24px;
     color: #ffff;
 }
@@ -434,21 +435,14 @@ h2 {
 }
 
 .tps_vpn_connect_link {
-    font-size: 21px;
+    font-size: 18px;
     color: blue;
     font-weight: 400;
 }
 
-
-
-
-
-
-
-
 /* media query  */
 @media (min-width:600px) and (max-width:1025px) {
-    .map_price_monitoring {
+    .prod_price_monitoring {
         font-size: 29px;
     }
 
@@ -480,7 +474,7 @@ h2 {
 }
 
 @media (min-width:320px) and (max-width:599.99px) {
-    .map_price_monitoring {
+    .prod_price_monitoring {
         font-size: 29px;
     }
 
@@ -557,8 +551,6 @@ h2 {
 
 
 /* about us page css */
-
-/* about us css */
 .about-section {
     padding: 50px;
     text-align: center;
