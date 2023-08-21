@@ -834,7 +834,6 @@ h2 {
                 border: 1px solid rgba(243, 227, 10, 0.1);
               }
               .pricing .table th {
-                /* width: 2%; */
                 font-size: 16px;
                 border-bottom: 2px;
                 font-weight: 600;
@@ -852,7 +851,6 @@ h2 {
 
                 text-align: center;
                 padding-top:3px;
-                /* background: #878688; */
                 background-image: linear-gradient(360deg, #dbd5f6 0%, #e1e9ff 100%);
               }
               .pricing tr td .ptable-title {
