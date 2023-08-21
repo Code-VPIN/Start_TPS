@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins&display=swap');
 
 :root {
-    --primary: #13C5DD;
+    /* --primary: #13C5DD; */
+    --primary: #22413d;
     --secondary: #354F8E;
     --light: #2c0404;
     --dark: #1D2A4D;
@@ -810,9 +811,11 @@ h2 {
             }
         }
 
-
+            /* dropdown hover effect start*/
 
         .dropdown-content a:hover {background-color: #ddd;}
 
         .dropdown:hover .dropdown-content {display: block;}
+
+            /* dropdown hover effect end*/
         
