@@ -809,3 +809,10 @@ h2 {
                 margin-left: 150px;
             }
         }
+
+
+
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        .dropdown:hover .dropdown-content {display: block;}
+        
