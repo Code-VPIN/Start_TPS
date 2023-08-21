@@ -212,11 +212,11 @@ body {
 
 #headtest::after {
     content: "";
-    width: 140px;
+    width: 200px;
     position: absolute;
     margin: 0 auto;
-    height: 3px;
-    background: #db584e;
+    height: 5px;
+    background: #dee2e6;
     left: 0;
     right: 0;
     bottom: -10px;
@@ -818,4 +818,74 @@ h2 {
         .dropdown:hover .dropdown-content {display: block;}
 
             /* dropdown hover effect end*/
+
+
+
+            /* pricing module css start */
+
+              .pricing .table th,
+              .pricing .table {
+                text-align: center;
+              }
+              .pricing .table th,
+              .pricing .table td {
+                padding: 2px;
+                border:1px solid #c44444;
+                border: 1px solid rgba(243, 227, 10, 0.1);
+              }
+              .pricing .table th {
+                /* width: 2%; */
+                font-size: 16px;
+                border-bottom: 2px;
+                font-weight: 600;
+                background-image: linear-gradient(360deg, #ebe9eb 0%, #e1e9ff 100%);
+                color: #000000;
+                text-transform: uppercase;
+              }
+              .pricing .table th.highlight{
+                border-top: 4px solid #4caf50 !important;
+              }
+              .pricing .table tr:nth-child(odd){
+                background: #4f86b5;
+              }
+              .pricing .table td:first-child{
+
+                text-align: center;
+                padding-top:3px;
+                /* background: #878688; */
+                background-image: linear-gradient(360deg, #dbd5f6 0%, #e1e9ff 100%);
+              }
+              .pricing tr td .ptable-title {
+                font-size: 16px;
+                font-weight: 600;
+                color: #000000;
+              }
+              .pricing tr td .ptable-title {
+                line-height: 2px;
+                text-align: right;
+                margin-right: 5px;
+              }
+
+              /* .btn-color-price {
+                background: #525353;
+                color: #ffff;
+                padding: 2% 9%;
+                font-size: 18px;
+            } */
+
+            /* .btn_price {
+                font-weight: 700;
+                transition: .5s;
+            }
+            
+            .btn_price:hover {
+                -webkit-box-shadow: 0 8px 6px -6px #555555;
+                -moz-box-shadow: 0 8px 6px -6px #555555;
+                box-shadow: 0 8px 6px -6px #555555;
+            } */
+              
+              
+
+
+            /* pricing module css end */
         
