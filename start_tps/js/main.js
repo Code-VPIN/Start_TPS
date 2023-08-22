@@ -62,8 +62,8 @@ mainItems.forEach((mainItem) => {
 
 // pricing module animation js
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const rows = document.querySelectorAll(".animate-row");
-//   rows.forEach(row => row.classList.add("animate-row"));
-// });
+document.addEventListener("DOMContentLoaded", function () {
+  const rows = document.querySelectorAll(".animate-row");
+  rows.forEach(row => row.classList.add("animate-row"));
+});
 
