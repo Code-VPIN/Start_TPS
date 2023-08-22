@@ -101,7 +101,7 @@
     --bs-link-hover-color-rgb: 10, 88, 202;
     --bs-code-color: #d63384;
     --bs-highlight-bg: #fff3cd;
-    --bs-border-width: 1px;
+    --bs-border-width: 2px;
     --bs-border-style: solid;
     --bs-border-color: #dee2e6;
     --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
@@ -2150,7 +2150,7 @@ progress {
     --bs-table-color-state: initial;
     --bs-table-bg-state: initial;
     --bs-table-color: var(--bs-body-color);
-    --bs-table-bg: var(--bs-body-bg);
+    /* --bs-table-bg: var(--bs-body-bg); */
     --bs-table-border-color: var(--bs-border-color);
     --bs-table-accent-bg: transparent;
     --bs-table-striped-color: var(--bs-body-color);
@@ -2343,13 +2343,15 @@ progress {
 
 .table-responsive {
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch
+    display:block;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
 }
 
 @media (max-width:575.98px) {
     .table-responsive-sm {
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch
+        -webkit-overflow-scrolling: touch;
     }
 }
 
@@ -8456,6 +8458,7 @@ fieldset:disabled .btn {
 
 .border {
     border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important
+   
 }
 
 .border-0 {
