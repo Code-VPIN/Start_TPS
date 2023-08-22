@@ -587,12 +587,20 @@ h2 {
 }
 
 .footer_change1 a:hover {
-    color: rgb(0, 0, 0);
+    color: rgba(82, 218, 239);
 }
 
 .footer-header {
     color: #dacfcf;
     text-decoration: none;
+}
+
+.copyright_hyper {
+    color: white;
+}
+
+.copyright_hyper:hover {
+    color: rgba(82, 218, 239);
 }
 
 
