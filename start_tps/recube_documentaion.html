@@ -60,8 +60,8 @@
                         <a href="about.html" class="nav-item nav-link">About us</a>
                         <a href="contact.html" class="nav-item nav-link">Contact us</a>
                     </div>
-                    <!-- <button class="mainbtn rounded-pill m-3 p-3" type="click" data-bs-toggle="modal" data-bs-target="#book_demo_model">Book
-                        A Demo</button> -->
+                    <button class="mainbtn rounded-pill m-3 p-3" type="click" data-bs-toggle="modal" data-bs-target="#book_demo_model">Book
+                        A Demo</button>
                 </div>
             </nav>
         </div>
@@ -73,57 +73,141 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="book_a_demo">Request A Callback</h1>
+                    <h2 class="modal-title text-center " id="book_a_demo">Request A Callback</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <form action="" class="contact__form" id="contact-form">
-                        <div class="row g-3">
-                            <div class="col-12">
-                                <select name="user_choice" class="form-select bg-light border-0" style="height: 55px;">
-                                    <option  selected>Choose Service</option>
-                                    <option value="Analytics">Analytics</option>
-                                    <option value="Digital Marketing">Digital Marketing</option>
-                                    <option value="spn_cataloguing">SPN & Cataloguing</option>
-                                    <option value="TAS">TAS</option>
-                                    <option value="ReCube">ReCube</option>
-                                </select>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="text" name="user_name" class="form-control bg-light border-0" placeholder="Your Name"
-                                    style="height: 55px;" required>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control bg-light border-0"
-                                    placeholder="Organization Name" name="org_name" style="height: 55px;" required>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="email" name="user_email" class="form-control bg-light border-0" placeholder="Email"
-                                    style="height: 55px;" required>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="tel" class="form-control bg-light border-0" name="user_mobile" placeholder="Enter Mobile No."
-                                    style="height: 55px;" required>
-                            </div>
-                            <div class="col-12 ">
-                                <div class="date" id="date" data-target-input="nearest">
-                                    <input type="datetime-local" name="demo_date"
-                                        class="form-control bg-light border-0 datetimepicker-input"
-                                        placeholder="Date" data-target="#date" data-toggle="datetimepicker"
-                                        style="height: 55px;" required>
-                                </div>
-                            </div>
-                            <div class="col-12 ">
-                                <textarea name="user_message" rows="4" id="message" class="form-control bg-light border-0" required placeholder="Message"></textarea>
-                             </div>
-                            <p class="text-success" id="contact-message"></p>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </div>
-                        </div>
+                <div class="zf-templateWidth col-lg-10 bg-body rounded m-4 col w-auto">
+                    <form
+                        action='https://forms.zohopublic.in/tpstech/form/BookADemo/formperma/A7799L-3Ago0T_7FMYq3zscomy1aPZpstNzN3IeSieo/htmlRecords/submit'
+                        name='form' method='POST' onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();'
+                        accept-charset='UTF-8' enctype='multipart/form-data' id='form' class="animate-row">
+                        <input type="hidden" name="zf_referrer_name"
+                            value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+                        <input type="hidden" name="zf_redirect_url"
+                            value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+                        <input type="hidden" name="zc_gad"
+                            value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+                        <div class="zf-templateWrapper"><!---------template Header Starts Here---------->
+                            <!-- <ul class="zf-tempHeadBdr list-unstyled">
+                                <li class="zf-tempHeadContBdr">
+                                    <h2 class="zf-frmTitle ">Request A Callback</h2>
+                                    <p class="zf-frmDesc"></p>
+                                    <div class="zf-clearBoth"></div>
+                                </li>
+                            </ul> -->
+                            <!---------template Header Ends Here---------->
+                            <!---------template Container Starts Here---------->
+                            <div class="zf-subContWrap zf-topAlign">
+                                <ul class="list-unstyled">
+                                    <!---------Name Starts Here---------->
+                                    <li class="zf-tempFrmWrapper zf-name zf-namemedium "><label class="zf-labelName fw-bolder">
+                                            Your Name
+                                        </label>
+                                        <div class="zf-tempContDiv zf-twoType">
+                                            <div class="zf-nameWrapper">
+                                                <span> <input type="text" class="form-control bg-light border-0" maxlength="255" name="Name_First" fieldType=7
+                                                        placeholder="First Name" /> <label></label>
+                                                </span>
+                                                </span> </span>
+                                                <span> <input type="text" class="form-control bg-light border-0" maxlength="255" name="Name_Last" fieldType=7
+                                                        placeholder="Last Name" />
+                                                </span>                                           
+                            
+                                            </div>
+                                            <p id="Name_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                                        </div>
+                                        <div class="zf-clearBoth pb-2"></div>
+                                    </li><!---------Name Ends Here---------->
+                                    <!---------Phone Starts Here---------->
+                                    <li class="zf-tempFrmWrapper zf-small "><label class="zf-labelName fw-bolder">
+                                            Contact Number
+                                            <em class="zf-important text-danger fs-5">*</em>
+                                        </label>
+                                        <div class="zf-tempContDiv zf-phonefld">
+                                            <div class="zf-phwrapper zf-phNumber">
+                                                <span> <input type="text" class="form-control bg-light border-0" compname="PhoneNumber" name="PhoneNumber_countrycode"
+                                                        maxlength="20" checktype="c7" value="" phoneFormat="1"
+                                                        isCountryCodeEnabled=false fieldType="11"
+                                                        id="international_PhoneNumber_countrycode" valType="number"
+                                                        phoneFormatType="2" placeholder="Mobile or Landline Number" />
+                                                    <label></label> </span>
+                                                <div class="zf-clearBoth"></div>
+                                            </div>
+                                            <p id="PhoneNumber_error" class="zf-errorMessage" style="display:none;">Invalid value
+                                            </p>
+                                            <!-- <p class="zf-instruction"></p> -->
+                                        </div>
+                                        <div class="zf-clearBoth"></div>
+                                    </li><!---------Phone Ends Here---------->
+                                    <!---------Email Starts Here---------->
+                                    <li class="zf-tempFrmWrapper zf-small "><label class="zf-labelName fw-bolder">
+                                            Official Email
+                                            <em class="zf-important text-danger fs-5">*</em>
+                                        </label>
+                                        <div class="zf-tempContDiv">
+                                            <span> <input fieldType=9 type="text" class="form-control bg-light border-0" maxlength="255" name="Email" checktype="c5"
+                                                    value="" placeholder="" /></span>
+                                            <p id="Email_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                                        </div>
+                                        <div class="zf-clearBoth pb-2"></div>
+                                    </li><!---------Email Ends Here---------->
+                                    <!---------Single Line Starts Here---------->
+                                    <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName fw-bolder">
+                                            Name of business
+                                            <em class="zf-important text-danger fs-5">*</em>
+                                        </label>
+                                        <div class="zf-tempContDiv">
+                                            <span> <input type="text" class="form-control bg-light border-0" name="SingleLine" checktype="c1" value="" maxlength="255"
+                                                    fieldType=1 placeholder="" /></span>
+                                            <p id="SingleLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                                        </div>
+                                        <div class="zf-clearBoth pb-2"></div>
+                                    </li><!---------Single Line Ends Here---------->
+                                    <!---------Dropdown Starts Here---------->
+                                    <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName fw-bolder">
+                                        Select app/service
+                                        <em class="zf-important text-danger fs-5">*</em>
+                                        </label>
+                                        <div class="zf-tempContDiv col-12">
+                                            <select class="zf-form-sBox form-select bg-light border-0" name="Dropdown1" checktype="c1">
+                                                <option selected="true" value="-Select-">-Select-</option>
+                                                <option value="TAS&#x20;&#x28;Attendance&#x29;">TAS &#x28;Attendance&#x29;</option>
+                                                <option value="ReCube&#x20;&#x28;Returns&#x20;Management&#x29;">ReCube &#x28;Returns
+                                                    Management&#x29;</option>
+                                                <option value="Business&#x20;Analytics">Business Analytics</option>
+                                                <option value="SEO&#x20;&amp;&#x20;Digital&#x20;Marketing">SEO &amp; Digital
+                                                    Marketing</option>
+                                                <option value="SPN&#x20;&#x2f;&#x20;Cataloguing&#x20;Services">SPN &#x2f;
+                                                    Cataloguing Services</option>
+                                                <option value="eCommerce&#x20;Business&#x20;Consulting">eCommerce Business
+                                                    Consulting</option>
+                                            </select>
+                                            <p id="Dropdown1_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                                        </div>
+                                        <div class="zf-clearBoth pb-2"></div>
+                                    </li><!---------Dropdown Ends Here---------->
+                                    <!---------Multiple Line Starts Here---------->
+                                    <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName fw-bolder">
+                                            Describe requirements
+                                        </label>
+                                        <div class="zf-tempContDiv">
+                                            <span> <textarea class="form-control bg-light border-0" name="MultiLine" checktype="c1" maxlength="65535"
+                                                    placeholder=""></textarea> </span>
+                                            <p id="MultiLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                                        </div>
+                                        <div class="zf-clearBoth"></div>
+                                    </li><!---------Multiple Line Ends Here---------->
+                                </ul>
+                            </div><!---------template Container Starts Here---------->
+                            <ul class="list-unstyled">
+                                <li class="zf-fmFooter modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button class="zf-submitColor btn btn-primary">Let's Connect</button>
+                                </li>
+                            </ul>
+                        </div><!-- 'zf-templateWrapper' ends -->
                     </form>
-                </div>                
+                </div>
             </div>
         </div>
     </div>
@@ -135,8 +219,6 @@
         <div class="container py-4 ">
             <div class="row justify-content-start">
                 <!-- <div class="col-lg-6">
-
-
                     <h2 class="d-inline-block text-primary text-uppercase border-bottom border-5"
                         style="border-color: rgba(256, 256, 256, .3) !important;"></h2> 
                     <p class="display-4 text-dark mb-md-4">E-commerce & SMBs Solution Provider </p>
@@ -296,7 +378,7 @@
                     <form
                         action='https://forms.zohopublic.in/tpstech/form/BookADemo/formperma/A7799L-3Ago0T_7FMYq3zscomy1aPZpstNzN3IeSieo/htmlRecords/submit'
                         name='form' method='POST' onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();'
-                        accept-charset='UTF-8' enctype='multipart/form-data' id='form'>
+                        accept-charset='UTF-8' enctype='multipart/form-data' id='form' class="animate-row">
                         <input type="hidden" name="zf_referrer_name"
                             value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
                         <input type="hidden" name="zf_redirect_url"
@@ -315,7 +397,7 @@
                             <div class="zf-subContWrap zf-topAlign">
                                 <ul class="list-unstyled">
                                     <!---------Name Starts Here---------->
-                                    <li class="zf-tempFrmWrapper zf-name zf-namemedium "><label class="zf-labelName ">
+                                    <li class="zf-tempFrmWrapper zf-name zf-namemedium "><label class="zf-labelName fw-bolder">
                                             Your Name
                                         </label>
                                         <div class="zf-tempContDiv zf-twoType">
@@ -335,9 +417,9 @@
                                         <div class="zf-clearBoth"></div>
                                     </li><!---------Name Ends Here---------->
                                     <!---------Phone Starts Here---------->
-                                    <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">
+                                    <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName fw-bolder">
                                             Contact Number
-                                            <em class="zf-important">*</em>
+                                            <em class="zf-important text-danger fs-5">*</em>
                                         </label>
                                         <div class="zf-tempContDiv zf-phonefld">
                                             <div class="zf-phwrapper zf-phNumber">
@@ -356,33 +438,33 @@
                                         <div class="zf-clearBoth"></div>
                                     </li><!---------Phone Ends Here---------->
                                     <!---------Email Starts Here---------->
-                                    <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">
+                                    <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName fw-bolder">
                                             Official Email
-                                            <em class="zf-important">*</em>
+                                            <em class="zf-important text-danger fs-5">*</em>
                                         </label>
                                         <div class="zf-tempContDiv">
                                             <span> <input fieldType=9 type="text" class="form-control bg-light border-0" maxlength="255" name="Email" checktype="c5"
                                                     value="" placeholder="" /></span>
                                             <p id="Email_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                                         </div>
-                                        <div class="zf-clearBoth"></div>
+                                        <div class="zf-clearBoth pb-3"></div>
                                     </li><!---------Email Ends Here---------->
                                     <!---------Single Line Starts Here---------->
-                                    <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">
+                                    <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName fw-bolder">
                                             Name of business
-                                            <em class="zf-important">*</em>
+                                            <em class="zf-important text-danger fs-5">*</em>
                                         </label>
                                         <div class="zf-tempContDiv">
                                             <span> <input type="text" class="form-control bg-light border-0" name="SingleLine" checktype="c1" value="" maxlength="255"
                                                     fieldType=1 placeholder="" /></span>
                                             <p id="SingleLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                                         </div>
-                                        <div class="zf-clearBoth"></div>
+                                        <div class="zf-clearBoth pb-3"></div>
                                     </li><!---------Single Line Ends Here---------->
                                     <!---------Dropdown Starts Here---------->
-                                    <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">
+                                    <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName fw-bolder">
                                             Select app/service
-                                            <em class="zf-important">*</em>
+                                            <em class="zf-important text-danger fs-5">*</em>
                                         </label>
                                         <div class="zf-tempContDiv col-12">
                                             <select class="zf-form-sBox form-select bg-light border-0" name="Dropdown1" checktype="c1">
@@ -400,10 +482,10 @@
                                             </select>
                                             <p id="Dropdown1_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                                         </div>
-                                        <div class="zf-clearBoth"></div>
+                                        <div class="zf-clearBoth pb-3"></div>
                                     </li><!---------Dropdown Ends Here---------->
                                     <!---------Multiple Line Starts Here---------->
-                                    <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">
+                                    <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName fw-bolder">
                                             Describe requirements
                                         </label>
                                         <div class="zf-tempContDiv">
